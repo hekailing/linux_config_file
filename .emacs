@@ -20,30 +20,6 @@
    t)
   (package-initialize))
 
-(add-to-list 'load-path "/usr/local/share/emacs/site-lisp/magit")
-(require 'magit)
-;; (load-file "/usr/local/share/emacs/site-lisp/vespa-style.el")
-;; (eval-after-load 'magit
-;;   '(progn
-;;      (set-face-foreground 'magit-diff-add "yellow")
-;;      (set-face-foreground 'magit-diff-del "red")))
-(custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- '(font-lock-comment-face ((t (:foreground "red"))))
-
-  ;; magit
- '(magit-item-highlight ((t nil))))
-
-(defun call-magit-status()
-  "open magit status"
-  (interactive) 
-  (call-interactively 'magit-status))
-
-(global-set-key (kbd "C-x g") 'call-magit-status)
-
 (ido-mode t)
 
 (setq frame-title-format
