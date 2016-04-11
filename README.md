@@ -8,5 +8,5 @@ qt.sh,arm-linux-gcc.sh复制到/etc/profile.d目录下
 Emacs的Python设置：
 下载最新的python-mode代码：https://gitlab.com/python-mode-devs/python-mode.git
 
-`$ cd ~/.emacs.d/plugins
-`$ git clone --recursive https://github.com/capitaomorte/yasnippet
+`$ cd ~/.emacs.d/plugins  
+$ git clone --recursive https://github.com/capitaomorte/yasnippet
